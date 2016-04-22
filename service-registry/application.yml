@@ -1,0 +1,15 @@
+# Disabling default endpoints
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+
+# Info endpoint configuration    
+info:
+  service:
+    name: '@project.name@'
+    description: '@project.description@'
+    version: '@project.version@'
