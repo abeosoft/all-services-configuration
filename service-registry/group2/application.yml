@@ -8,6 +8,8 @@ eureka:
     hostname: localhost
     leaseRenewalIntervalInSeconds: 30
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
   server:
