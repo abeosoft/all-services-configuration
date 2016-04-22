@@ -1,0 +1,14 @@
+spring:
+	profiles:
+		active: group2
+server:
+	port: 8762
+eureka:
+  instance:
+    hostname: localhost
+    leaseRenewalIntervalInSeconds: 30
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
