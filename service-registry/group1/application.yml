@@ -1,8 +1,10 @@
 spring:
-	profiles:
-		active: group1
+  profiles:
+    active: group1
+
 server:
-	port: 8761
+  port: 8761
+
 eureka:
   instance:
     hostname: localhost
